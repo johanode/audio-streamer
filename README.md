@@ -11,17 +11,16 @@ You need Python 3.5 or newer installed on your system along with the following P
 
 ```bash
 pip install numpy sounddevice soundfile ntplib
-
+```
 For AWS IoT integration, you will also need:
 ```bash
 pip install AWSIoTPythonSDK
 ```
 
 ### Installation
-
+```bash
 git clone https://github.com/yourusername/sudio-streamer.git
 cd audio-streamer
-```bash
 pip install -r requirements.txt
 ```
 
@@ -31,8 +30,7 @@ To start streaming audio data locally, run:
 ```bash
 python example.py
 ```
-Streaming with AWS IoT
-Make sure you have configured your aws_iot.json correctly:
+Streaming with AWS IoT, make sure you have configured your aws_iot.json correctly:
 ```bash
 python example_aws.py
 ```
