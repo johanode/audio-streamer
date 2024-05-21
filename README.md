@@ -19,8 +19,11 @@ pip install AWSIoTPythonSDK
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/sudio-streamer.git
+git clone https://github.com/johanode/audio-streamer.git
 cd audio-streamer
+```
+Prerequisites can be installed using
+```bash
 pip install -r requirements.txt
 ```
 
