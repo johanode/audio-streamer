@@ -1,8 +1,8 @@
 {
 	"root_ca": "aws_iot_credentials/AmazonRootCA1.pem",
-	"client_id": "SPECIFY-CLIENT-ID",
-	"endpoint": "SPECIFY-YOUR-AWS-IOT-ENPOINT",
-	"topic": "SPECIFY-TOPIC",
-	"private_key": "aws_iot_credentials/SPECIFY-KEY-ID-private.pem.key",
-	"certificate": "aws_iot_credentials/SPECIFY-KEY-ID-certificate.pem.crt"
+	"client_id": "your-client-id",
+	"endpoint": "your-iot-endpoint.amazonaws.com",
+	"topic": "your/topic",
+	"private_key": "aws_iot_credentials/your-private-key.pem.key",
+	"certificate": "aws_iot_credentials/your-certificate.pem.crt"
 }

@@ -1,5 +1,5 @@
 {   
-	"device_id" : "rpi",
+	"device_id" : null,
 	"samplerate": 44100,        
 	"channels": 1,
 	"mime": "audio/wav",
