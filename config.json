@@ -1,0 +1,10 @@
+{   
+	"device_id" : "rpi",
+	"samplerate": 44100,        
+	"channels": 1,
+	"mime": "audio/wav",
+	"extension": "wav",
+	"audio_file_path": "audiodata/",
+	"feature_time": 3.0,
+	"audio_time": 30.0
+}
