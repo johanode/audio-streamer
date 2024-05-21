@@ -1,7 +1,6 @@
 import json
 import numpy as np
 import sounddevice as sd
-from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
 import time
 import ntplib
 from datetime import datetime, timedelta
@@ -96,7 +95,7 @@ class AudioStreamer:
         self.config['mime'] = extension_to_mime.get(self.audio_extension, None)
             
             
-    def setup_iot_client(self):
+    def setup_iot_client(self):               
         iot = self.config.get('aws', None)        
         if iot:
             # Check for all required keys
@@ -108,6 +107,8 @@ class AudioStreamer:
                 return  # Exit the function if configuration is incomplete
 
             try:
+                from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
+                
                 self.iot_client = AWSIoTMQTTClient(iot['client_id'])
                 self.iot_client.configureEndpoint(iot['endpoint'], 8883)
                 self.iot_client.configureCredentials(
